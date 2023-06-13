@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan Query</title>
+</head>
+<body>
+    <h3>Judul Konten</h3>
+    <p></p>
+    <div id="isikontenid">Isi dari konten ID</div> 
+    <div class="isikontencls">Isi dari konten CLASS</div>
+    <br>
+    <div id="isiNana">NAMA SAYA YONG</div>
+    <div class="isiNIN">DENGAN NIM 2201010697</div>
+    
+    <script src="jquery-3.7.8.min.js"></script>
+    <script>
+    //$(document).ready(function() {
+    
+    $(function() {
+    
+    $("eistkontenid").html("Kunten dengan JQuery pada element ID");
+    $(".Isikontuncls").html("Konten dengan JQuery pada element CLASS");
+    $("h3").html("Latihan JQuery");
+    $("p").html("Isi dari paragraph");
+    
+    let tx ="perkenalkan nama saya yong fratama";
+    let tx1="nomor Induk Mahasiswa Saya adalah 2201010697";
+    $("isiNAMA").html(tx);
+    $("ISINIM").html(tx1);
+    $("1").html("Hello,"+tx+"Dengan"+tx);
+    
+    });
+    
+    
+    //document.get("states") 
+</script>
+    
+    </body>
+     </html>

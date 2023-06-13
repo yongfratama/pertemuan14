@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan jQuery 02</title>
+</head>
+<body>
+
+    <h3>Judul Form</h3>
+
+    <div id="navigasi">
+        <button type="button" class="persegi">Hitung Luas Persegi</button>
+        <button type="button" class="segi3">Hitung Luas Segi Tiga</button>
+    </div>
+    <div id="HitungLuasPersegi">
+        <div>
+            Nilai Panjang
+            <input type="number" class="PJ" >
+        </div>
+        <div>
+            Nilai Lebar
+            <input type="number" class="LB" >
+        </div>
+        <div >
+            <button type="button" class="cmdPersegi">Hitung Luas</button>
+        </div>
+    </div>
+
+    <div id="HitungLuasSegi3">
+        <div>
+            Nilai Alas
+            <input type="number" class="AL" >
+        </div>
+        <div>
+            Nilai Tinggi
+            <input type="number" class="TG" >
+        </div>
+        <div >
+            <button type="button" class="cmdPersegi">Hitung Luas</button>
+        </div>
+    </div>
+    <div id="HitungLuasSegi3"></div>
+    <div id="hasil">Hasilnya</div>
+
+    <script src="jQuery-3.7.0.min.js"></script>
+
+    <script>
+        $(function(){
+
+            $("#hasil").hide();
+            $("#HitungLuasSegi3").hide();
+            $("#HitungLuasPersegi").hide();
+
+            let judul = "Klik Tombol";
+            
+
+            $(".persegi").click(function(){
+                $("#HitungLuasSegi3").hide(500);
+                $("#HitungLuasPersegi").show(500);
+                judul = "Hitung Luas Persegi (Persegi Panjang)";
+                $("h3").html(judul);
+            })
+            $(".segi3").click(function(){
+                $("#HitungLuasSegi3").show(500);
+                $("#HitungLuasPersegi").hide(500);
+                judul = "Hitung Luas Segi Tiga";
+                $("h3").html(judul);
+            })
+
+        })
+    </script>
+    
+</body>
+</html>
